@@ -8,7 +8,7 @@
 	<main class="min-h-[200vh] h-full w-full bg-[#0D101B]">
 		<Header />
 		<section
-			class="min-h-[110vh] bg-[url('static-header-background.png')] bg-cover flex justify-center items-center relative"
+			class="min-h-[110vh] bg-[url('/static-header-background.png')] bg-cover flex justify-center items-center relative"
 		>
 			<div class="flex flex-col w-full justify-center items-center gap-[48px] -mt-32">
 				<div>
