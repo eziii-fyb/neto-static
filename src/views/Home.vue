@@ -1,5 +1,6 @@
 <script setup>
 	import Header from "../components/Header.vue";
+	import MouseCursor from "../components/MouseCursor.vue";
 	import HeaderMarquee from "../components/HeaderMarquee.vue";
 	import { Marquee } from "@selemondev/vue3-marquee";
 	import "@selemondev/vue3-marquee/dist/style.css";
@@ -33,7 +34,7 @@
 	});
 </script>
 <template>
-	<!-- <MouseCursor /> -->
+	<MouseCursor />
 	<main ref="mainContainer" class="h-full w-full bg-[#0D101B]">
 		<Header />
 		<div class="fixed inset-0 bg-transparent blur-[50px]">
