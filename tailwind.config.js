@@ -6,6 +6,7 @@ export default {
 			fontFamily: {
 				"ubuntu": ["Ubuntu  ", "serif"],
 				"ubuntu-mono": ["Ubuntu Mono  ", "serif"],
+				"unbounded": ["Unbounded  ", "serif"],
 			},
 		},
 	},

@@ -9,7 +9,7 @@
 		gsap.to(cursor.value, {
 			x: event.clientX,
 			y: event.clientY,
-			duration: 0.1, // Smooth transition duration
+			duration: 2, // Smooth transition duration
 			ease: "power3.out",
 		});
 	};
@@ -24,22 +24,25 @@
 </script>
 
 <template>
-	<div
-		ref="cursor"
-		class="cursor"
-	></div>
+	<div class="fixed inset-0 bg-[#0D101B]">
+		<div
+			ref="cursor"
+			class="cursor"
+		></div>
+	</div>
 </template>
 
 <style scoped>
 	.cursor {
 		position: fixed;
-		width: 20px;
-		height: 20px;
-		background-color: white;
+		width: 40px;
+		height: 40px;
+		background-color: rgba(255, 255, 255, 0.452);
 		border-radius: 50%;
 		pointer-events: none;
-		z-index: 1000;
+		z-index: 2;
+		filter: blur(15px); /* Softer smoke */
 		transform: translate(-50%, -50%);
-		mix-blend-mode: difference;
+		/* mix-blend-mode: difference; */
 	}
 </style>
